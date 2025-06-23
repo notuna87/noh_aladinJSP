@@ -1,4 +1,5 @@
-![main](https://github.com/user-attachments/assets/45678c4c-a399-4bca-a75a-05f7892b038b)
+![main](https://github.com/user-attachments/assets/c860f814-6f64-4de5-8cc2-d3d9f6ae8d3d)
+
 
 <h1 align="center">📚 JSP/Servlet 개인 프로젝트 - 알라딘</h1>
 <p align="center">JSP와 Servlet 기반으로 구현된 동적 웹 프로젝트</p>
@@ -56,72 +57,50 @@
 
 ![board](https://github.com/user-attachments/assets/80dd2352-4b50-44a9-961b-99b498c9eeaa)
 
-## 🗂️ PPT - [PDF 다운로드](https://github.com/user-attachments/files/20859117/aladin_jsp.pdf)
+## 🗂️ PPT - [PDF 다운로드]()
 
-![ppt_01](https://github.com/user-attachments/assets/ffcc998d-2101-4801-aeac-5e6d17643a37)
+![알라딘_02](https://github.com/user-attachments/assets/35ee98ed-151b-43bd-b7d3-5b8f535a50f8)
+![알라딘_03](https://github.com/user-attachments/assets/9586aedb-85dc-4b06-8ae2-3295a7b767c6)
+![알라딘_04](https://github.com/user-attachments/assets/f744e8e1-43c8-451b-9063-9fc6c9c82b3a)
+![알라딘_05](https://github.com/user-attachments/assets/f939884d-6983-4b55-95d3-feca2feb7e83)
+![알라딘_06](https://github.com/user-attachments/assets/2900bdbe-bda6-40e8-9784-1b3566a8edab)
+![알라딘_07](https://github.com/user-attachments/assets/acf21a17-db5c-4b63-8790-a7d84a0c8b98)
+![알라딘_08](https://github.com/user-attachments/assets/ed8e7c08-ec03-495a-96b4-bef5caa2540d)
+![알라딘_09](https://github.com/user-attachments/assets/7c968ef3-7af4-40ed-9b78-3f4035ed53fd)
+![알라딘_10](https://github.com/user-attachments/assets/58dcc5e1-b5bb-48c3-8853-31434c406530)
+![알라딘_11](https://github.com/user-attachments/assets/fb7cd0ec-b479-44f7-a231-b6354dfe21b2)
+![알라딘_12](https://github.com/user-attachments/assets/6c849c78-5c8b-428a-ac6c-4e41a8d8a25d)
+![알라딘_13](https://github.com/user-attachments/assets/4f08497e-0813-4e3a-aea6-a5a61b3a9d84)
+![알라딘_14](https://github.com/user-attachments/assets/c87b18b3-4502-4043-bd77-481698e1bde8)
+![알라딘_15](https://github.com/user-attachments/assets/52b7e400-72ee-468a-a3f0-d055a994ef20)
+![알라딘_16](https://github.com/user-attachments/assets/1443efcc-6c80-4e17-a698-dba2a6b8f9a8)
+![알라딘_17](https://github.com/user-attachments/assets/f0c401d0-935b-4b6e-ad16-f3c78963e198)
+![알라딘_18](https://github.com/user-attachments/assets/b0f1aed5-59b9-434d-8262-41eaeeea4b76)
+![알라딘_19](https://github.com/user-attachments/assets/c25ab2d9-7819-4779-8d5e-73f6161231e6)
+![알라딘_20](https://github.com/user-attachments/assets/99799677-b970-47ba-a630-c280d2b17ed7)
+![알라딘_21](https://github.com/user-attachments/assets/b805f01d-3edb-405a-9b12-203aad51a121)
+![알라딘_22](https://github.com/user-attachments/assets/76300d0e-23d4-4bbf-8bff-c56b6aaf9e0e)
+![알라딘_23](https://github.com/user-attachments/assets/8bf2e218-0e21-47eb-815e-99d48b03caca)
+![알라딘_24](https://github.com/user-attachments/assets/967cd13a-1a6a-4be4-ae3b-5b6443023f8d)
+![알라딘_25](https://github.com/user-attachments/assets/a4af40a2-9331-4fd6-b853-8b8d99ba5137)
+![알라딘_26](https://github.com/user-attachments/assets/cd70ea7a-cd89-4c72-a90e-51dc13104f34)
+![알라딘_27](https://github.com/user-attachments/assets/9b725f41-2421-49f5-8173-ad8f2189fc80)
 
-![ppt_02](https://github.com/user-attachments/assets/176b76f9-ecf9-42e7-a5de-cb29b32e3dda)
 
-![ppt_03](https://github.com/user-attachments/assets/565a1904-47c0-4c2f-9d14-0269558bc4ff)
 
-![ppt_04](https://github.com/user-attachments/assets/cd9fbe2b-070a-4178-b357-6d9fe8b50757)
-
-![ppt_05](https://github.com/user-attachments/assets/b3772135-b1b8-4e48-9cbe-8efa5c6652b6)
-
-![ppt_06](https://github.com/user-attachments/assets/e56423bb-36c9-45dc-8a60-caaf07e6b717)
-
-![ppt_07](https://github.com/user-attachments/assets/f8af0332-a468-4d67-830e-5b97df36dc9f)
-
-![ppt_08](https://github.com/user-attachments/assets/4606aa4b-30a3-4457-9fef-df5f6814314f)
-
-![ppt_09](https://github.com/user-attachments/assets/aa82619d-a14d-43e0-a506-536bf428a40d)
-
-![ppt_10](https://github.com/user-attachments/assets/f8c1f539-0838-4680-8339-8856af793265)
-
-![ppt_11](https://github.com/user-attachments/assets/4391770e-4020-4638-bffa-67096acf0a2e)
-
-![ppt_12](https://github.com/user-attachments/assets/504e8d64-018c-45de-a103-80c5b5ab26ab)
-
-![ppt_13](https://github.com/user-attachments/assets/32e6082b-7a96-418a-9a64-fc133f928abc)
-
-![ppt_14](https://github.com/user-attachments/assets/db249d73-10e1-45ed-8887-1d845c09942c)
-
-![ppt_15](https://github.com/user-attachments/assets/55ff4733-8c7f-418a-a850-8c72e6c87fcf)
-
-![ppt_16](https://github.com/user-attachments/assets/b097068a-e69f-407e-95c6-6948bfcd5304)
-
-![ppt_17](https://github.com/user-attachments/assets/6eb43072-64c8-46f2-ab03-8550123b7877)
-
-![ppt_18](https://github.com/user-attachments/assets/9b80b9bb-18f7-46d5-a730-7d490ab75673)
-
-![ppt_19](https://github.com/user-attachments/assets/83aebbe5-1e5b-47ee-8b0e-8fb4a8666f47)
-
-![ppt_20](https://github.com/user-attachments/assets/b7d8b0a2-4209-4654-a487-5ee44f5fdafd)
-
-![ppt_21](https://github.com/user-attachments/assets/0b291b4b-caeb-401e-b28e-cecd4419d0be)
-
-![ppt_22](https://github.com/user-attachments/assets/e4d0b86e-ea8a-44d2-af65-b66cbe324960)
-
-![ppt_23](https://github.com/user-attachments/assets/009c1273-c171-4072-bdeb-d44563328421)
-
-![ppt_24](https://github.com/user-attachments/assets/50fc44c5-a0f8-4f85-ba90-b803a25ec202)
-
-![ppt_25](https://github.com/user-attachments/assets/c1738466-6687-4ce9-90eb-cdc47915d321)
-
-![ppt_26](https://github.com/user-attachments/assets/cf1b9cb5-0201-49fd-a8c5-367adab250b1)
-
-![ppt_27](https://github.com/user-attachments/assets/09a50f83-dc70-497d-83db-f07f81114ebe)
+</br>
 
 ## 🚀 개선사항
+</br>
 
-1. 관리자 전용 페이지 구현 : 사이트 관리 기능을 위한 관리자 페이지를 분리하여, 회원 관리, 게시글 삭제, 권한 부여 등 운영 측면의 기능을 강화
+<b>1. 관리자 전용 페이지 구현</b> : 사이트 관리 기능을 위한 관리자 페이지를 분리하여, 회원 관리, 게시글 삭제, 권한 부여 등 운영 측면의 기능을 강화
 
-2. 입력값 검증 고도화 : 현재 단순한 정규표현식 기반 검증에서 나아가, 서버 측 유효성 검사 및 공통 Validator 클래스를 통해 보안성과 안정성을 높이기
+<b>2. 입력값 검증 고도화</b> : 현재 단순한 정규표현식 기반 검증에서 나아가, 서버 측 유효성 검사 및 공통 Validator 클래스를 통해 보안성과 안정성을 높이기
 
-3. 게시판 페이징 처리 구현 : 게시글 수가 많아질 경우를 대비하여, 페이징 처리 기능을 도입함으로써 사용자 편의성과 성능을 개선
+<b>3. 게시판 페이징 처리 구현</b> : 게시글 수가 많아질 경우를 대비하여, 페이징 처리 기능을 도입함으로써 사용자 편의성과 성능을 개선
 
-4. 게시글 검색 기능 추가 : 키워드 기반 검색 또는 카테고리 필터링을 통해, 사용자가 원하는 게시글을 빠르게 찾을 수 있도록 검색 기능을 추가
+<b>4. 게시글 검색 기능 추가</b> : 키워드 기반 검색 또는 카테고리 필터링을 통해, 사용자가 원하는 게시글을 빠르게 찾을 수 있도록 검색 기능을 추가
 
-5. 파일 업로드 / 다운로드 개선 : 업로드 파일의 형식/크기 제한 및 다운로드 링크 처리 등 안정적인 파일 관리 기능을 추가하여 사용자 경험을 향상
+<b>5. 파일 업로드 / 다운로드 개선</b> : 업로드 파일의 형식/크기 제한 및 다운로드 링크 처리 등 안정적인 파일 관리 기능을 추가하여 사용자 경험을 향상
 
-6. 예외 처리 전담 클래스 도입 : 각 Servlet에서의 중복된 try-catch 처리 대신, 공통 예외 처리 전담 클래스를 통해 코드의 재사용성과 유지보수성을 높임.
+<b>6. 예외 처리 전담 클래스 도입</b> : 각 Servlet에서의 중복된 try-catch 처리 대신, 공통 예외 처리 전담 클래스를 통해 코드의 재사용성과 유지보수성을 높임.
