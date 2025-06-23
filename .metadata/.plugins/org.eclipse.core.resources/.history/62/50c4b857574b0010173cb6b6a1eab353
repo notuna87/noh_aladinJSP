@@ -1,0 +1,12 @@
+package com.aladin.dto;
+
+public class BoardVO {
+	private int num;
+	private String username;
+	private String email;
+	private String pass;
+	private String title;
+	private String content;
+	private int readcount;
+	private Timestamp writedate;
+}

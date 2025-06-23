@@ -1,0 +1,67 @@
+@charset "EUC-KR";
+
+/* 섹션 길이 설정 */
+section {
+	height: auto;
+	overflow: hidden;
+}
+
+#boarderWrap {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0 0 25px;
+	align-content: center;
+}
+
+h2 {
+	display: block;
+	width: 1130px;
+	margin: 0 auto;
+}
+
+.border {
+	display: block;
+	background-color: #DEEDF5;
+	padding: 15px;
+	border: 1px solid #195FA5;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 1130px;
+}
+
+
+/* 개인정보 수정 시작*/
+.borderForm {
+	background-color: #fff;
+	padding: 5px;
+	font-size: 14px;
+	color: #496BAF;
+	font-weight: 500;
+	width: 97%;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+
+
+.submitButton {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 50px;
+	margin-top: 30px;
+	border: none;
+	background-color: #DF307F;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+}
+
+.submitButton:hover {
+	cursor: pointer;
+	background-color: #c51b67;
+	color: #fff;
+}

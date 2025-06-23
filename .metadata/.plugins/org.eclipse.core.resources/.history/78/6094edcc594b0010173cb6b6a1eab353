@@ -1,0 +1,72 @@
+@charset "EUC-KR";
+
+/* 섹션 길이 설정 */
+section {
+    height: 1200px;
+}
+
+
+#borderWrap {
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0 0 25px;
+}
+
+
+.border {
+    width: 98%;
+    height: auto;
+    background-color: #DEEDF5;
+    padding: 15px;
+    float: left;
+    margin: 20px 0;
+    border: 1px solid #195FA5;
+    border-radius: 5px;
+}
+
+.border>p {
+    color: #496BAF;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* 개인정보 수정 시작*/
+.borderForm {
+    background-color: #fff;
+    height: 73%;
+    padding: 5px 0 0 20px;
+    font-size: 14px;
+    color: #496BAF;
+    font-weight: 500;
+    width: 97%;
+    float: left;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+table {
+	
+    border-collapse: collapse;
+}
+.list th {
+    height: 50px;
+    border-bottom: 1px solid #888;
+}
+
+.list th:nth-child(1) {
+    width: 50px;
+}
+.list th:nth-child(2) {
+    width: 575px;
+}
+.list th:nth-child(3) {
+    width: 170px;
+}
+.list th:nth-child(4) {
+    width: 120px;
+}
+.list th:nth-child(5) {
+    width: 60px;
+}

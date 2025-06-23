@@ -1,0 +1,173 @@
+@charset "EUC-KR";
+
+/*섹션 길이 설정*/
+section {
+    height: 1150px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/*적립금 적립 배너 시작*/
+#pointWrap {
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.point {
+    width: 1130px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.point img {
+    width: 1130px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.pointText {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.pointText h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.pointText p {
+    font-size: 16px;
+}
+
+/*적립금 적립 배너 끝*/
+
+/* 기본 정보, 약관 동의 좌측 div */
+
+.leftWrap {
+    float: left;
+    height: 100%;
+    width: 30%;
+    padding: 50px 0 0 40px;
+}
+
+.leftWrap h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.leftWrap p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* 기본 정보, 약관 동의 좌측 div 끝*/
+
+/*기본 정보 입력 시작*/
+
+#basicInformation {
+    width: 1130px;
+    height: 400px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+}
+
+#basicInformation>.rightWrap {
+    height: 100%;
+    width: 54%;
+    padding: 50px 0 0 20px;
+    line-height: 44px;
+}
+
+/* 가운데 */
+#basicInformation>.middleWrap {
+    height: 100%;
+    width: 150px;
+    padding: 50px 0 0 20px;
+    line-height: 45px;
+}
+
+/* input 크기 */
+
+.longInput {
+    width: 216px;
+    height: 32px;
+}
+
+.emailInput {
+    width: 100px;
+    height: 32px;
+}
+
+.phoneInput {
+    width: 65px;
+    height: 32px;
+}
+
+.idCheck {
+	width: 32px;
+	width: 50px;
+}
+
+/* righrWrap 우측 인풋 들어있는 div 시작*/
+
+#basicInformation>.rightWrap span {
+    font-size: 12px;
+}
+
+#basicInformation>.rightWrap p {
+    line-height: 20px;
+    font-size: 13px;
+}
+
+/* righrWrap 우측 인풋 들어있는 div 끝*/
+
+/*기본 정보 입력 끝*/
+
+/* 약관 동의 시작*/
+#Agree {
+    width: 1130px;
+    height: 360px;
+    border-bottom: 1px solid #DEDEDE;
+    margin: 0 auto;
+    display: flex;
+}
+
+#Agree .rightWrap {
+    padding: 50px 0 0 20px;
+    line-height: 35px;
+}
+
+#Agree img {
+    transform: translateX(-100px);
+}
+
+.rightWrapCkbox {
+    margin-bottom: 20px;
+}
+
+/* 약관 동의 끝*/
+/* 제출 버튼 시작*/
+
+.submitButton {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    background-color: #DF307F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  	border-radius: 5px;
+}
+
+/* 제출 버튼 끝*/

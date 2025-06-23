@@ -1,0 +1,116 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/join.css">
+<script type="text/javascript" src="script/join.js"></script>
+<script type="text/javascript" src="script/login.js"></script>
+<title>알라딘 : 회원가입</title>
+</head>
+
+<body>
+	<!-- 헤더 임포트 -->
+	<jsp:include page="header.jsp" />
+
+	<!-- 섹션 시작 -->
+	<section>
+		<!-- 적립금 적립 배너 시작-->
+		<form action="#" method="post" name="frm">
+			<div id="pointWrap">
+				<div class="point">
+					<img src="img/joinBanner/joinBanner.png" alt="joinBanner">
+					<div class="pointText">
+						<h2>알라딘 회원가입</h2>
+						<p>회원가입하고 적립금 꼭 받으세요!</p>
+					</div>
+				</div>
+			</div>
+			<!-- 적립금 적립 배너 끝-->
+
+			<!-- 기본 정보 입력 시작-->
+			<div id="basicInformation">
+				<div class="leftWrap">
+					<h3>기본 정보 입력</h3>
+					<p>
+						<span style="color: #32ACEC;">*</span> 필수입력항목
+					</p>
+				</div>
+				<div class="middleWrap">
+					<p>
+						이름 <span style="color: #32ACEC;">*</span>
+					</p>
+					<p>
+						아이디 <span style="color: #32ACEC;">*</span>
+					</p>
+					<p>
+						이메일 <span style="color: #32ACEC;">*</span>
+					</p>
+					<p>
+						비밀번호 <span style="color: #32ACEC;">*</span>
+					</p>
+					<p>
+						비밀전호 재입력 <span style="color: #32ACEC;">*</span>
+					</p>
+					<p>
+						휴대전화 <span style="color: #32ACEC;">*</span>
+					</p>
+
+				</div>
+				<div class="rightWrap">
+					<input type="hidden" value="0" name="admin"> <input
+						class="longInput" type="text" name="name"><br> <input
+						class="longInput" type="text" name="joinId"><span>&nbsp;
+						(4자~12자리의 영문자, 숫자 / @,#$등 특수문자는 제외) </span><br> <input
+						class="emailInput" type="text" name="joinEmailFront"><span>
+						@ </span> <input class="emailInput" type="text" name="joinEmailBack"><br>
+					<input class="longInput" type="password" name="pwd"><span>&nbsp;
+						(영문, 숫자로 10자~20자) </span><br> <input
+						class="longInput" type="password" name="pwdRe"><span>&nbsp;
+						비밀번호를 다시 한번 입력해주세요. </span><br> <input class="phoneInput"
+						type="text" name="phoneFirst"><span> - </span> <input
+						class="phoneInput" type="text" name="phoneMiddle"><span>
+						- </span> <input class="phoneInput" type="text" name="phoneBack"><span>&nbsp;
+						주문배송문자, ARS 상담/중고매장 이용시 본인확인용으로 사용 </span><br>
+					<p>[중고매장 이용 고객님]</p>
+					<p>매장에서 인증하신 휴대전화 번호를 입력하시면, 가입 후 매장 구매 내역이 자동으로 통합됩니다.</p>
+				</div>
+			</div>
+			
+			<!-- 기본 정보 입력 끝 -->
+			<!-- 약관 동의 시작-->
+
+<!-- 			<div id="Agree">
+				<div class="leftWrap">
+					<h3>약관동의</h3>
+				</div>
+				<div class="rightWrap">
+					<input type="checkbox"> <span>모든약관에 동의합니다.</span>
+					<p style="font-size: 14px;">아래 모든 약관 및 마케팅 안내 수신(선택) 내용을 확인 및
+						동의합니다.</p>
+					<input class="rightWrapCkbox" type="checkbox"><span>
+						[필수] 알라딘 이용약관</span>
+					<hr style="width: 770px;">
+					<input class="rightWrapCkbox" type="checkbox"><span>
+						[필수] 커뮤니티 이용약관</span>
+					<hr>
+					<input class="rightWrapCkbox" type="checkbox"><span>
+						[필수] 커뮤니티 이용동의</span> <img src="img/joinBanner/joinBanner_2.jpg"
+						alt="joinBanner_2">
+				</div>
+			</div> -->
+			<!-- 약관 동의 끝-->
+			<input class="submitButton" type="submit" value="회원 가입하기"
+				onclick="return joinCheck()">
+		</form>
+	</section>
+	<!-- 섹션 끝 -->
+
+	<!-- 푸터 임포트 -->
+	<jsp:include page="footer.jsp" />
+</body>
+</html>

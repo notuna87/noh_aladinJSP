@@ -1,0 +1,5 @@
+package com.aladin.dto;
+
+public class BoardVO {
+
+}

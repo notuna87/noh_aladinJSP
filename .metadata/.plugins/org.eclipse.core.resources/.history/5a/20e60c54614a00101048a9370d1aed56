@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/reset.css">
+<script type="text/javascript" src="script/login.js"></script>
+<title>알라딘 - 로그인</title>
+</head>
+
+<body>
+	<div id="loginWrap">
+		<div class="loginTitle">회원 로그인</div>
+		<div class="loginTitle_2"></div>
+		<div class="loginFormWrap">
+			<div class="loginFrom">
+				<form action="#" method="post" name="frm">
+					<input class="submit" type="button" value="로그인"
+						onclick="loginCheck()"> <input class="idpw"
+						style="border-bottom: none;" type="text"
+						placeholder=" ID 또는 E-Mail" name="userId"> <input
+						class="idpw" type="password" placeholder=" 비밀번호" name="userPw">
+
+					<input class="idsaveCkbox" type="checkbox" name="idSave">
+
+					<ul>
+						<li><a href="#">ID 또는 E-Mail 저장</a></li>
+						<li><a href="#">아이디 찾기</a></li>
+						<li><a href="#">비밀번호 찾기</a></li>
+					</ul>
+				</form>
+			</div>
+			<img class="loginSub" src="img/loginForm/loginSub.jpg" alt="loginSub">
+			<div class="joinMemberButton">알라딘 간편 회원가입</div>
+			<p style="font-size: 14px; font-weight: 500; margin-bottom: 10px;">SNS
+				계정으로 로그인/가입</p>
+			<div class="snsLogoWrap" style="background-color: #04CE5C;">
+				<img class="naverLogo" src="img/icon/logo_naver_w.svg"
+					alt="logo_naver">
+			</div>
+			<div class="snsLogoWrap" style="background-color: #F9E000;">
+				<img class="kakaoLogo" src="img/icon/logo_kakao.svg"
+					alt="logo_naver">
+			</div>
+			<div class="snsLogoWrap" style="background-color: #F2F2F2;">
+				<img class="goolgeLogo" src="img/icon/logo_google.svg"
+					alt="logo_naver">
+			</div>
+			<div class="snsLogoWrap" style="background-color: #222222;">
+				<img class="appleLogo" src="img/icon/logo_apple_w.svg"
+					alt="logo_naver">
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

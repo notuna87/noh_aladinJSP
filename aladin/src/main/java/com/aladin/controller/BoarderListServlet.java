@@ -1,0 +1,41 @@
+package com.aladin.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.aladin.dao.BoardDAO;
+import com.aladin.dto.BoardVO;
+@WebServlet("/boarderlist.do")
+public class BoarderListServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		// url 저장
+		String url ="/Views/boarderList.jsp";
+		// 객체생성
+		BoardDAO bDao = BoardDAO.getInstance();
+		// list에 저장
+		List<BoardVO> boardList = bDao.selectAllBoards();
+		request.setAttribute("boardList", boardList);
+		// 포워드
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		dispatcher.forward(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Views/boardWrite.jsp");
+		dispatcher.forward(request, response);
+	}
+
+}

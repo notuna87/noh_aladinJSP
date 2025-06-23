@@ -1,0 +1,780 @@
+@charset "utf-8";
+
+/*헤더 시작*/
+header {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #33afe9;
+}
+
+.categoryLogin {
+    width: 100%;
+    background-color: #33afe9;
+    border-bottom: 1px solid #3f8ccb;
+}
+
+.headerCategory {
+    width: 1130px;
+    height: 38px;
+    margin: 0 auto;
+    overflow-x: auto
+
+}
+
+.bookCategory {
+    align-items: center;
+    width: 100%;
+}
+
+.bookCategory>li {
+    height: 38px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.bookCategory>.homeMenu {
+    background-color: #fff;
+    overflow: visible;
+    height: 39px;
+    width: 58px;
+    padding: 0 18px;
+    letter-spacing: -1px;
+    border: 1px solid #3f8ccb;
+    border-bottom: none;
+}
+
+.bookCategory>.homeMenu>a {
+    color: #0f4e8a;
+}
+
+.bookCategory a {
+    color: #000;
+}
+
+.bookCategory>.bookCategoryBig>div>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.bookCategory div ul {
+    float: left;
+    margin-top: 20px;
+    width: 165px;
+}
+
+.menuBoxKorea>ul {
+    float: left;
+    margin-top: 20px;
+    width: 165px;
+}
+
+.bookCategory>li>a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.bookCategory>li {
+    line-height: 28px;
+    font-size: 14px;
+    position: relative;
+}
+
+.advertiseBanner {
+    float: right;
+    height: 90%;
+    width: 30%;
+}
+
+.bookCategory>li:hover div {
+    display: block;
+}
+
+/* 국내도서 */
+.menuBoxKorea {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: 530px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    transform: translateX(-71px);
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    left: 0;
+}
+
+/* 외국도서 */
+.menuBoxforeign {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: 530px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    transform: translateX(-134px);
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    left: 0;
+}
+
+
+/*eBook*/
+.menuBoxeBook {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: 380px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    transform: translateX(-196px);
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    left: 0;
+}
+
+/*알라딘 굿즈*/
+.goods {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: 380px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    transform: translateX(-247px);
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    left: 0;
+}
+
+/*온라인 중고*/
+.onlineUsed {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    transform: translateX(163px);
+}
+
+/*중고매장*/
+.usedStore {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    transform: translateX(45px);
+}
+
+/*커피*/
+.coffee {
+    position: absolute;
+    top: 100%;
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+}
+
+/*블루레이*/
+.blueRay {
+    position: absolute;
+    top: 100%;
+    width: 1130px;
+    height: auto;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    box-shadow: 0px 0px 15px 1px #bbb;
+    padding: 25px;
+    transform: translateX(-56px);
+}
+
+/*상단 로그인 메뉴*/
+.loginBox {
+    width: 370px;
+    height: 100%;
+}
+
+.loginBox>.loginul {
+    margin: 0;
+    width: 100%;
+    height: 0;
+
+}
+
+.loginBox>ul>li {
+    float: right;
+    margin: 3px;
+}
+
+
+.loginBox a,.loginBox li {
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+
+
+/*로고 및 로그인 시작*/
+
+.headerMiddle {
+    width: 100%;
+    height: 110px;
+    float: left;
+}
+
+.logo_search {
+    width: 1130px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/*로고 이미지*/
+.logo {
+    width: 200px;
+    float: left;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+/*검색 상자*/
+.searchField {
+    width: 650px;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox {
+    width: 500px;
+    height: 36px;
+    background-color: white;
+    border: 3px solid #34afe9;
+    border-radius: 50px;
+}
+
+/*검색창*/
+#search {
+    border: none;
+    border-radius: 30px;
+    margin-left: 7px;
+    font-size: 13px;
+    align-items: center;
+    color: #34afe9;
+}
+
+.search {
+    border: none;
+    width: 345px;
+    height: 25px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.searchBox>button {
+    float: right;
+    background-color: #33afe9;
+    width: 53px;
+    height: 100%;
+    text-align: center;
+    border-radius: 0 13px 13px 0;
+    font-size: 15px;
+    padding: 5px;
+    color: #fff;
+    border: none;
+}
+
+.searchBox>button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchField>a {
+    margin: 6px;
+    font-size: 11px;
+    color: gray;
+}
+
+/*검색창 끝*/
+
+/*분야 보기*/
+.headerBottom {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    float: left;
+}
+
+.fieldViews {
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.fieldCategory {
+    height: 100%;
+}
+
+.fieldCategory>li {
+    float: left;
+    font-size: 13px;
+    padding: 5px;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.fieldCategory>.totalCategory>a::after {
+    content: "|";
+    color: gray;
+    font-size: 10px;
+    margin-left: 14px;
+}
+
+.fieldCategory>li>a {
+    color: black;
+}
+
+.totalCategory {
+    float: left;
+}
+
+.totalCategory>a>img {
+    width: 25px;
+    float: left;
+}
+
+.allCategory {
+    top: 100%;
+    width: 1130px;
+    height: 580px;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 0px 15px 1px #bbb;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.fieldCategory>li:hover div {
+    display: block;
+}
+
+.allCategoryKoreaGoodsForeign {
+    height: 550px;
+    width: 272px;
+    float: left;
+    margin: 2px;
+}
+
+.allCategoryEbookUsedMusic {
+    height: 550px;
+    width: 180px;
+    float: left;
+    margin: 2px;
+}
+
+.korea>ul {
+    float: left;
+    line-height: 23px;
+}
+
+.korea>ul>li>a {
+    margin: 5px;
+    color: #000;
+}
+
+.korea>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.categoryTitle {
+    width: 100%;
+    height: 26px;
+    background-color: #4f4f4f;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+.categoryTitle>a {
+    color: #fff;
+    margin: 10px;
+}
+
+.allCategoryKoreaGoodsForeign ul li a {
+    margin: 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.allCategoryEbookUsedMusic ul li a {
+    margin: 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.recommendBook::after {
+    content: "N";
+    font-size: 12px;
+    color: #fff;
+    background-color: #f32383;
+    padding: 0 4px;
+    border-radius: 15px;
+}
+
+/*헤더 끝*/
+
+
+
+/*푸터 시작*/
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 30px;
+}
+
+/*공지사항 시작*/
+.footerTopWrap {
+    width: 1130px;
+    height: 560px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.footerTopWrap a {
+    color: #000;
+}
+
+.footerListwrapOne {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.fastServiceWrap {
+    width: 16%;
+    height: 100%;
+}
+
+.publisherWrap {
+    width: 16%;
+    height: 100%;
+}
+
+.noticeWrap ul h4 {
+    margin-bottom: 15px;
+}
+
+.noticeWrap li {
+    margin: 3px 0 0 5px;
+    font-size: 15px;
+}
+
+.noticeWrap li a span {
+    color: green;
+}
+
+
+
+.noticeWrap li a:hover {
+    text-decoration: underline;
+}
+
+
+.noticeWrap li::before {
+    content: "• ";
+}
+
+/*공지사항 끝*/
+/*검색 시작*/
+.searchWrap {
+    height: 100%;
+    width: 34%;
+    flex-direction: column;
+    border-left: 1px dashed #f1f1f1;
+}
+
+.searchBoxWrap {
+    width: 100%;
+    position: relative;
+}
+
+.searchWrap {
+    padding: 15px;
+}
+
+.searchWrap h4 {
+    margin-bottom: 10px;
+}
+
+.searchWrap button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    transform: translateX(-38px);
+}
+
+.searchWrap button:hover {
+    cursor: pointer;
+}
+
+.searchWrap button img {
+    width: 30px;
+    height: 30px;
+}
+
+.searchWrap .search {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.searchWrap .searchRadio {
+    float: left;
+    margin: 6px;
+}
+
+.searchWrap p {
+    float: left;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.searchWrap .eventWinner {
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/*검색 끝*/
+/*빠른 서비스 시작*/
+
+.fastServiceWrap {
+    border-left: 1px dashed #f1f1f1;
+}
+
+.fastServiceWrap h4 {
+    margin: 30px 10px;
+}
+
+.fastServiceWrap li {
+    margin-left: 10px;
+}
+
+.fastServiceWrap li a {
+    font-size: 14px;
+}
+
+.fastServiceWrap li a:hover {
+    text-decoration: underline;
+}
+
+/*빠른 서비스 끝*/
+
+/*출판사, 판매자 안내 시작*/
+.publisherWrap {
+    border-left: 1px dashed #f1f1f1;
+}
+
+.publisherWrap h4 {
+    margin: 30px 10px;
+}
+
+.publisherWrap li {
+    margin-left: 10px;
+}
+
+.publisherWrap li a {
+    font-size: 14px;
+}
+
+.publisherWrap li a:hover {
+    text-decoration: underline;
+}
+
+/*출판사, 판매자 안내 끝*/
+
+/*푸터 상단 아래 스페셜 서비스 부분 시작*/
+
+.footerListwrapTwo {
+    height: 250px;
+    display: flex;
+}
+
+.footerListBottom {
+    width: 16%;
+    height: 100%;
+    flex: 1;
+    margin: 2px;
+}
+
+.footerListBottomTitle {
+    background-color: #edeff1;
+    margin: 3px 0 10px 0;
+    padding-left: 15px;
+    height: 35px;
+    width: 98%;
+    align-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.footerListBottom li {
+    margin-left: 15px;
+}
+
+.footerListBottom li a {
+    font-size: 14px;
+}
+
+/*푸터 상단 아래 스페셜 서비스 부분 끝*/
+
+
+/*중간 푸터 시작*/
+.footerMiddleWrap {
+    width: 1130px;
+    height: 55px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 30px;
+}
+
+.footerMiddleWrap p {
+    white-space: nowrap;
+}
+
+.footerMiddleWrap p a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*중간 푸터 끝*/
+
+/*푸터 하단 시작*/
+/*푸터 하단 좌측 시작*/
+.footerBottomWrap {
+    width: 1130px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.aladinCommunicationWrap {
+    width: 65%;
+    height: 100%;
+    padding: 30px;
+}
+
+.aladinCommunicationWrap h3 {
+    margin-bottom: 10px;
+}
+
+.aladinCommunicationWrap p {
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 25px;
+}
+
+.aladinCommunicationWrap p a {
+    color: #444;
+}
+
+/*푸터 하단 좌측 끝*/
+/*푸터 하단 우측 시작*/
+.customerServiceWrap {
+    width: 35%;
+    height: 100%;
+}
+
+.customerServiceWrap {
+    padding: 30px 0 0 30px;
+}
+
+.customerServiceWrap h3 {
+    margin-bottom: 10px;
+}
+
+.customerServiceWrap p {
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.customerServiceInqueryFaq {
+    width: 44%;
+    height: 35px;
+    float: left;
+    margin: 0 7px 13px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+    font-size: 13px;
+    color: #333;
+    border-radius: 3px;
+}
+
+.storeLocation {
+    width: 90%;
+    height: 35px;
+    float: left;
+    margin-right: 7px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+    font-size: 13px;
+    color: #333;
+    border-radius: 3px;
+}
+
+/*푸터 하단 우측 끝*/
+/*푸터 하단 끝*/
+/*푸터 끝*/

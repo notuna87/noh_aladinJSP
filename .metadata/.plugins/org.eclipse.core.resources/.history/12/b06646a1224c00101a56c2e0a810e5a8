@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/boardWrite.css">
+<meta charset="UTF-8">
+<title>알라딘 : 문의하기</title>
+</head>
+
+<body>
+	<!-- 헤더 임포트 -->
+	<jsp:include page="header.jsp" />
+
+	<form action="boarderwrite.do" enctype="multipart/form-data"
+		method="post">
+		<div id="boarderWrap">
+			<h2>문의 수정하기</h2>
+			<div class="border">
+				<div class="borderForm">
+					<input class="writeTitle" type="text" name="writeTitle"
+						placeholder="제목을 입력해주세요." required> <span>비밀번호 : </span><input
+						class="pwdCheck" type="password" name="pwdCheck" required><span>
+						본인확인용 비밀번호를 입력해주세요.</span>
+					<textarea rows="10" cols="60" placeholder="문의내용을 작성해주세요."
+						name="content" required></textarea>
+					<input type="file" name="pictureUrl"><br>
+					<span>(문의하신 내용과 관련된 이미지를 첨부해주시면 보다 정확한 확인이 가능합니다.)</span>
+				</div>
+			</div>
+		</div>
+		<div class="ButtonWrap">
+			<input class="submitButton" type="submit" value="문의하기"> <input
+				class="submitButton" type="button" value="목록으로"
+				onclick="if(confirm('글을 작성중입니다. 돌아가시겠습니까?')) location.href='boarderlist.do';">
+		</div>
+	</form>
+
+	<!-- 푸터 임포트 -->
+	<jsp:include page="footer.jsp" />
+</body>
+</html>

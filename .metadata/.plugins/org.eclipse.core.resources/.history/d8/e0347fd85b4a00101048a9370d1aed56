@@ -1,0 +1,18 @@
+// 로그인창 여는 함수
+function login() {
+
+	if (document.frm.userId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userid.focus(); // ← 오타: document.frm.userid 로 수정해야 함
+		return;
+	}
+		if (document.frm.userPw.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.userid.focus(); // ← 오타: document.frm.userid 로 수정해야 함
+		return;
+	}
+
+	var url = "login.do";
+	window.open(url, "_blank_1",
+		"toolbar=no, menubar=no, scrollbars=no, resizable=no, width=780, height=480");
+}

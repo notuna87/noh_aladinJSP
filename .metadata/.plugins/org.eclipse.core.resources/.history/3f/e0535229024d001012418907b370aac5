@@ -1,0 +1,38 @@
+package com.aladin.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.aladin.dao.BoardDAO;
+import com.aladin.dto.BoardVO;
+
+@WebServlet("/boarderupdate.do")
+public class BoarderUpdateServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		  String num = request.getParameter("num");
+		  
+		  BoardDAO bDao = BoardDAO.getInstance();
+		  bDao.updateReadCount(num);
+		  BoardVO bVo = bDao.selectOneBoardByNum(num);
+		  request.setAttribute("board", bVo);
+		  
+		  // 쿼리스트링으로 전달된 상품 코드 받기
+		  RequestDispatcher dispatcher = request.getRequestDispatcher("/Views/boarderUpdate.jsp");
+		  dispatcher.forward(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	}
+
+}

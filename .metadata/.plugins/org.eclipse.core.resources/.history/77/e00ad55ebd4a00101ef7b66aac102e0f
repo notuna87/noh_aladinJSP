@@ -1,0 +1,38 @@
+function joinCheck() {
+	if (document.frm.name.value == "") {
+		alert('필수 입력항목에 입력하여 주십시오.');
+		document.frm.name.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.joinId.focus();
+		return false;
+	}
+
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+}

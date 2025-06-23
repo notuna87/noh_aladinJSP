@@ -1,0 +1,1028 @@
+/*슬라이더 시작*/
+#slider {
+    width: 1130px;
+    height: 1350px;
+    margin: 0 auto;
+}
+
+/*편집장의 선택*/
+.editorChoiceSlider {
+    width: 100%;
+    height: 600px;
+    background-color: hsl(207, 53%, 93%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 8px;
+    margin-top: 10px;
+}
+
+
+.editorChoiceSlider>ul>li>div {
+    width: 98%;
+    height: 530px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 3px;
+    position: absolute;
+    right: -150%;
+}
+
+.editor {
+    position: absolute;
+    right: 12px;
+    display: flex;
+}
+
+.recommendBook_item {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recommendBook_item img {
+    width: 200px;
+}
+
+.recommendTitle {
+    margin-top: 18px;
+    font-size: 17px;
+    text-align: center;
+    color: #000;
+}
+
+.recommendAuthors {
+    color: #555;
+    font-size: 15px;
+    text-align: center;
+}
+
+.recommendComment {
+    color: #4077c0;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.totalCategory {
+    float: left;
+}
+
+.totalCategory>a>img {
+    width: 25px;
+    float: left;
+}
+
+.choiceSelector {
+    margin-top: 8px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.choiceSelector>div {
+    width: 300px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2a68b9;
+}
+
+.choiceSelector>div:hover {
+    background-color: #2a68b9;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*편집자의 선택 끝*/
+
+/*작은 슬라이더 시작*/
+
+.smallSlider {
+    position: absolute;
+    display: flex;
+    width: 740px;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.smallSliderButton {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #dadada;
+
+}
+
+.smallSliderButton>ul>li {
+    position: relative;
+    height: 40px;
+    width: 110px;
+    float: left;
+    background-color: #edeff1;
+    margin-right: 10px;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #dadada;
+
+}
+
+.eventSlider, .elecBookSlider {
+    align-items: center;
+}
+
+.contentTwowrap {
+    height: 100%;
+}
+
+.contentTwowrap img {
+    width: 360px;
+    height: 100%;
+    margin-right: 10px;
+    transform: translateX(-30px);
+}
+
+.smallSliderButton>ul>li:hover {
+    background-color: white;
+    border-bottom: none;
+    font-weight: bold;
+    height: 41px;
+    overflow: visible;
+}
+
+.smallSliderButton>ul>li>a {
+    color: gray;
+    font-size: 13px;
+}
+
+/*작은 슬라이더*/
+
+.smallSliderContent {
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.smallSliderContent div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.slideBook_item {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideBook_item img {
+    width: 130px;
+}
+
+.slideTitletitle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.categoryTitle {
+    color: black;
+    text-decoration: none;
+}
+
+.slideTitle {
+    margin-top: 10px;
+    color: #000;
+
+}
+
+.slidedComment {
+    color: #000;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*작은 슬라이더 끝*/
+
+/*슬라이더 옆 광고 시작*/
+.advertiseImgBox {
+    width: 335px;
+    height: 375px;
+}
+
+.advertiseImgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.advertiseImgBox .slick-list {
+    height: 100%;
+}
+
+.smallAdvertiseCounter {
+    z-index: 10;
+    font-size: 13px;
+    color: gray;
+    float: right;
+}
+
+.smallAdvertise {
+    float: right;
+    margin-top: 15px;
+    width: 335px;
+    height: 375px;
+}
+
+.smallAdvertise .slick-prev,
+.slick-next {
+    z-index: 10;
+    font-size: 20px;
+    color: black;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    border-radius: 30px;
+}
+
+.smallAdvertise .slick-prev {
+    left: 10px;
+}
+
+.smallAdvertise .slick-next {
+    right: 10px;
+}
+
+/*슬라이더 옆 광고 끝*/
+
+/*랭킹 및 이벤트 슬라이더 시작*/
+
+.rankingBox {
+    width: 850px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+}
+
+.rankingBox>h2 {
+    height: 40px;
+    font-size: 20px;
+}
+
+.rankingOneTwo {
+    width: 30%;
+    height: 240px;
+    float: left;
+}
+
+.rankingOneTwo hr {
+    border: none;
+    border-top: 1px solid #CCCCCC;
+    width: 90%;
+       transform: translateY(-1px);
+}
+
+
+.oneBox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.twoBox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+	
+.twoBox>div {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.rankingOneTwo a {
+    color: #000;
+}
+
+.rankingOneTwo a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.oneBox>div {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.rankingOneTwo img {
+    height: 60%;
+    width: 70px;
+    margin-left: 10px;
+}
+
+
+.rankingTen {
+    width: 70%;
+    height: 240px;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.rankingTen>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    width: 98%;
+}
+
+.rankingTen>ul>li {
+    flex: 1;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.rankingTen>ul>li>a {
+    color: #000;
+}
+
+.rankingTen>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.miniEvent {
+    width: 220px;
+    height: 220px;
+    float: right;
+    margin-top: 100px;
+    position: relative;
+    right: 60px;
+}
+
+.miniEventCounter {
+    position: absolute;
+    left: 30px;
+    top: 214px;
+    font-size: 12px;
+    width: 40px;
+    height: 10px;
+    color: gray;
+    z-index: 10;
+}
+
+.miniEventprev,
+.miniEventnext {
+    z-index: 10;
+    font-size: 14px;
+    color: gray;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 95%;
+    background-color: transparent;
+}
+
+.miniEventprev {
+    left: 0px;
+}
+
+.miniEventnext {
+    left: 60px;
+}
+
+.eventImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+}
+
+.eventImg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.miniEventImgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*랭킹 및 이벤트 슬라이더 끝*/
+
+/*슬라이더 끝*/
+
+/*섹션 시작*/
+section {
+    width: 100%;
+    height: 2500px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+/*북 펀드 슬라이더 시작*/
+.bookFundImgWrap {
+    width: 1030px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    transform: translateX(-25px);
+}
+
+.bookFundCounter {
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    font-size: 13px;
+    color: gray;
+}
+
+.bookFundprev,
+.bookFundnext {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+}
+
+.bookFundnext {
+    right: -25px;
+}
+
+.bookFundprev {
+    left: -25px;
+}
+
+/*북 펀드 슬라이더 끝*/
+
+/*한강 시작*/
+
+.hangangNewBookSlider {
+    width: 1130px;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.hangangNewBookSlider a {
+    color: #000;
+}
+
+.hangangNewBook {
+    padding: 30px;
+    width: 1130px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hangangNewBookSlider>h2>a {
+    font-size: 20px;
+    color: #000;
+}
+
+.hangangBookitem {
+    padding: 10px;
+}
+
+.hangangBookitem img {
+    width: 180px;
+    margin-right: 30px;
+    border: 1px solid #e2e2e2;
+}
+
+
+.hangangTitle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.hangangAuthors {
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.hangangPrev,
+.hangangNext:hover {
+    cursor: pointer;
+}
+
+.hangangPrev,
+.hangangNext {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #848484;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 0;
+    font-size: 18px;
+    color: #8c99ad;
+    top: 40%;
+    z-index: 10;
+}
+
+.hangangNext {
+    right: 30px;
+    padding: 10px 1px 10px 3px;
+}
+
+.hangangPrev {
+    left: 20px;
+    padding: 10px 3px 10px 1px;
+}
+
+/*한강 끝*/
+
+/*추천 마법사 시작*/
+
+.recommendMagicionSlider {
+    width: 1130px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.recommendMagicionSlider a {
+    color: #000;
+}
+
+.recommendMagicionBook {
+    padding: 30px;
+    width: 1130px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.recommendMagicionSlider>h2>a {
+    font-size: 20px;
+    color: #000;
+}
+
+.recommendMagicionitem {
+    padding: 10px;
+}
+
+.recommendMagicionitem img {
+    width: 180px;
+    margin-right: 30px;
+    border: 1px solid #e2e2e2;
+}
+
+
+.recommendMagicionTitle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.recommendMagicionAuthors {
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.recommendMagicionPrev,
+.recommendMagicionNext:hover {
+    cursor: pointer;
+}
+
+.recommendMagicionPrev,
+.recommendMagicionNext {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #848484;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 0;
+    font-size: 18px;
+    color: #8c99ad;
+    top: 40%;
+    z-index: 10;
+}
+
+.recommendMagicionNext {
+    right: 30px;
+    padding: 10px 1px 10px 3px;
+}
+
+.recommendMagicionPrev {
+    left: 20px;
+    padding: 10px 3px 10px 1px;
+}
+
+/*추천 마법사 끝*/
+
+/*화제의 책 소식 시작*/
+.bookNewsSlider {
+    height: 280px;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.bookNewsBook {
+    height: 230px;
+    width: 1130px;
+}
+
+.bookNewsitem {
+    height: 200px;
+    width: 150px;
+    background-color: #f3f3f5;
+    margin: 10px;
+    padding: 15px;
+}
+
+.bookNewsitem img {
+    float: left;
+    height: 100%;
+}
+
+.bookNewsTitle {
+    margin-left: 15px;
+    float: left;
+    width: 59%;
+    font-weight: bold;
+    color: #000;
+}
+
+.bookNewsComment {
+    width: 59%;
+    height: 135px;
+    float: left;
+    margin: 10px 0 0 15px;
+}
+
+.bookNewsSlider a {
+    color: #000;
+}
+
+.bookNewsSlider h2 {
+    font-size: 20px;
+}
+
+.bookNewsPrev,
+.bookNewsNext {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #848484;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 0;
+    font-size: 18px;
+    color: #8c99ad;
+    top: 40%;
+    z-index: 10;
+}
+
+.bookNewsPrev,
+.bookNewsNext:hover {
+    cursor: pointer;
+}
+
+.bookNewsPrev {
+    left: -10px
+}
+
+.bookNewsNext {
+    right: -10px;
+}
+
+.bookNewsSlider .slick-slide {
+    height: 200px;
+}
+/*화제의 책 소식 끝*/
+
+
+/*이달의 주목도서 시작*/
+
+.thisMonthSlider {
+    width: 1130px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.thisMonthSlider a {
+    color: #000;
+}
+
+.thisMonthBook {
+    padding: 30px;
+    width: 1130px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.thisMonthSlider>h2>a {
+    font-size: 20px;
+    color: #000;
+}
+
+.thisMonthitem {
+    padding: 10px;
+}
+
+.thisMonthitem img {
+    width: 180px;
+    margin-right: 30px;
+    border: 1px solid #e2e2e2;
+}
+
+
+.thisMonthTitle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.thisMonthAuthors {
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.thisMonthPrev,
+.thisMonthNext:hover {
+    cursor: pointer;
+}
+
+.thisMonthPrev,
+.thisMonthNext {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #848484;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 0;
+    font-size: 18px;
+    color: #8c99ad;
+    top: 40%;
+    z-index: 10;
+}
+
+.thisMonthNext {
+    right: 30px;
+    padding: 10px 1px 10px 3px;
+}
+
+.thisMonthPrev {
+    left: 20px;
+    padding: 10px 3px 10px 1px;
+}
+
+/*이달의 주목도서 끝*/
+
+/*이 주의 특가 시작*/
+.weekSaleSlider {
+    width: 1130px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.weekSaleSlider a {
+    color: #000;
+}
+
+.weekSaleBook {
+    padding: 30px;
+    width: 1130px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.weekSaleSlider>h2>a {
+    font-size: 20px;
+    color: #000;
+}
+
+.weekSaleitem {
+    padding: 10px;
+}
+
+.weekSaleitem img {
+    width: 180px;
+    margin-right: 30px;
+    border: 1px solid #e2e2e2;
+}
+
+
+.weekSaleTitle {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.weekSaleAuthors {
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.weekSalePrev,
+.weekSaleNext:hover {
+    cursor: pointer;
+}
+
+.weekSalePrev,
+.weekSaleNext {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #848484;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 0;
+    font-size: 18px;
+    color: #8c99ad;
+    top: 40%;
+    z-index: 10;
+}
+
+.weekSaleNext {
+    right: 30px;
+    padding: 10px 1px 10px 3px;
+}
+
+.weekSalePrev {
+    left: 20px;
+    padding: 10px 3px 10px 1px;
+}
+
+.weekSalePrice {
+    width: 180px;
+    height: 24px;
+    background-color: #fa4498;
+    color: #fff;
+    position: absolute;
+    top: 246px;
+    text-align: center;
+    font-size: 13px;
+    align-content: center;
+}
+/*이 주의 특가 끝*/
+
+
+/*알라디너 시작*/
+.aladinerTv {
+    width: 1130px;
+    height: 285px;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.livebookTalkWrap {
+    width: 730px;
+    height: 100%;
+}
+
+.authorMeetWrap {
+    width: 400px;
+    height: 100%;
+    float: right;
+}
+.aladinerTv a {
+    color: #000;
+    font-size: 22px;
+    display: flex;
+}
+
+.livebookTalkWrap h2 {
+    margin-left: 15px;
+}
+
+.bookTalk {
+    width: 30%;
+    height: 80%;
+    margin: 16px 5px;
+    float: left;
+}
+
+.bookTalk img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.liveBookTalkTitle a {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.liveBookTalkHashtag a {
+    font-size: 11px;
+    color: #2a68b9;
+    margin-top: 2px;
+}
+
+.liveBookTalkHits{
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.authorMeet {
+    width: 100%;
+    height: 41%;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.authorMeet > a {
+    width: 30%;
+    height: 100%;
+
+}
+.authorMeet img {
+    border-radius: 180px;
+    width: 80px;
+    height: 80px;
+    margin: 20px 10px 0 5px;
+
+}
+
+.authorMeet div {
+    margin-top: 25px;
+    width: 80%;
+}
+
+.authorMeetTitle > a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.authorMeetContent {
+    padding: 5px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.authorMeetContent > a{
+    margin-top: 15px;
+    font-size: 12px;
+    color: gray;
+}
+/*알라디너 끝*/
+/*섹션 끝*/

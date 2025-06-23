@@ -1,0 +1,117 @@
+package com.aladin.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.aladin.dao.MemberDAO;
+import com.aladin.dto.MemberVO;
+
+@WebServlet("/join.do")
+public class JoinServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Views/join.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// 한글 출력
+		response.setContentType("text/html; charset=UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		PrintWriter out = response.getWriter();
+
+		// 사용자로부터 전송된 정보들 받아오기
+		String name = request.getParameter("name");
+		String joinId = request.getParameter("joinId");
+		String joinEmailFront = request.getParameter("joinEmailFront"); // 이메일 앞에 부분을 받아옴
+		String joinEmailBack = request.getParameter("joinEmailBack"); // 이메일 뒤에 부분을 받아옴
+		String email = joinEmailFront + "@" + joinEmailBack; // 받은 후 email에 값 저장
+		String pwd = request.getParameter("pwd");
+		String pwdRe = request.getParameter("pwdRe");
+		String phoneFirst = request.getParameter("phoneFirst"); // 핸드폰 번호 앞에 부분을 받아옴
+		String phoneMiddle = request.getParameter("phoneMiddle"); // 핸드폰 번호 가운데 부분을 받아옴
+		String phoneBack = request.getParameter("phoneBack"); // 핸드폰 번호 뒤에 부분을 받아옴
+		String phone = phoneFirst + "-" + phoneMiddle + "-" + phoneBack; // 받은 후 phone에 값 저장
+		String admin = request.getParameter("admin");
+
+		// 디버깅용
+		System.out.println("joinId : " + joinId);
+		System.out.println("pwd : " + pwd);
+		System.out.println("name : " + name);
+		System.out.println("email : " + email);
+		System.out.println("phoneNum : " + phone);
+		System.out.println("pwdRe : " + pwdRe);
+		System.out.println((pwd).equals(pwdRe));
+
+		// DTO 객체에 값 세팅
+		MemberVO mVo = new MemberVO();
+		mVo.setUsername(name);
+		mVo.setUserid(joinId);
+		mVo.setPwd(pwd);
+		mVo.setEmail(email);
+		mVo.setPhone(phone);
+		mVo.setAdmin(Integer.parseInt(admin)); // 문자열을 정수형으로 변환하여 저장
+
+		// DAO 객체를 통해 회원 정보 DB에 저장
+
+		// 정규표현식: 4~12자리, 영문자+숫자만 허용
+		String regex = "^[a-zA-Z0-9]{4,12}$";
+		String pwRegex = "^[a-zA-Z0-9]{10,20}$\r\n"
+				+ "";
+		
+		if (!joinId.matches(regex)) {
+			out.println("<script>");
+			out.println("alert('아이디를 확인해주세요.');");
+			out.println("history.back();");
+			out.println("</script>");
+			out.close();
+
+		} else {
+
+			if ((pwd).equals(pwdRe)) {
+				MemberDAO mDao = MemberDAO.getInstance();
+				int result = mDao.insertMember(mVo); // insert 성공하면 1 반환
+
+				if (result == 1) {
+					// 회원가입 성공 시
+					request.setAttribute("message", "회원가입에 성공했습니다.");
+					out.println("<script>");
+					// 경고 창 출력
+					out.println("alert('가입이 완료되었습니다.');");
+					out.println("location.href='index.do';"); // JS로 페이지 이동
+					out.println("</script>");
+					out.close();
+
+				} else {
+					// 실패 시, 에러 메시지 설정
+					request.setAttribute("message", "회원가입에 실패했습니다.");
+					out.println("<script>");
+					// 경고 창 출력
+					out.println("alert('회원가입이 되지 않았습니다.');");
+					out.println("history.back();");
+					out.println("</script>");
+					out.close();
+
+				}
+			} else {
+				out.println("<script>");
+				// 경고 창 출력
+				out.println("alert('비밀번호와 확인비밀번호가 다릅니다.');");
+				out.println("history.back();");
+				out.println("</script>");
+				out.close();
+			}
+
+		}
+	}
+}

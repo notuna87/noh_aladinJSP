@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\java_work\aladin\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2622254887.index
+\aladin\src\main\java
+C:\java_work\aladin\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4294923860.index
+\aladin\src\main\java

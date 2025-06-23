@@ -1,0 +1,84 @@
+// input 입력 확인
+function joinCheck() {
+	if (document.frm.name.value == "") {
+		alert('이름을 입력하여 주십시오.');
+		document.frm.name.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.joinId.focus();
+		return false;
+	}
+
+	if (document.frm.email.value == "") {
+		alert('이메일을 입력하여 주십시오.');
+		document.frm.joinEmailBack.focus();
+		return false;
+	}
+	if (document.frm.pwd.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.pwd.focus();
+		return false;
+	}
+	if (document.frm.pwdRe.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.pwdRe.focus();
+		return false;
+	}
+	if (document.frm.phoneFirst.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneFirst.focus();
+		return false;
+	}
+	if (document.frm.phoneMiddle.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneMiddle.focus();
+		return false;
+	}
+	if (document.frm.phoneBack.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneBack.focus();
+		return false;
+	}
+}
+
+// 개인정보 수정 수정하기 버튼 클릭시
+function modifyCheck() {
+	
+	if (document.frm.joinEmailFront.value == "") {
+		alert('이메일을 입력하여 주십시오.');
+		document.frm.joinEmailFront.focus();
+		return false;
+	}
+	if (document.frm.joinEmailBack.value == "") {
+		alert('이메일을 입력하여 주십시오.');
+		document.frm.joinEmailBack.focus();
+		return false;
+	}
+	if (document.frm.pwd.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.pwd.focus();
+		return false;
+	}
+	if (document.frm.pwdRe.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.pwdRe.focus();
+		return false;
+	}
+	if (document.frm.phoneFirst.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneFirst.focus();
+		return false;
+	}
+	if (document.frm.phoneMiddle.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneMiddle.focus();
+		return false;
+	}
+	if (document.frm.phoneBack.value == "") {
+		alert('핸드폰 번호를 입력하여 주십시오.');
+		document.frm.phoneBack.focus();
+		return false;
+	}
+}

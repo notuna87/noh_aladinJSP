@@ -1,0 +1,7 @@
+// 로그인창 여는 함수
+function login() {
+
+	var url = "login.do";
+	window.open(url, "_blank_1",
+		"toolbar=no, menubar=no, scrollbars=no, resizable=no, width=780, height=480");
+}

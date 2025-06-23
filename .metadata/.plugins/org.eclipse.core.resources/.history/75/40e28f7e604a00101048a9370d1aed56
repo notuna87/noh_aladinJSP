@@ -1,0 +1,5 @@
+package com.aladin.dao;
+
+public class MemberDAO {
+
+}

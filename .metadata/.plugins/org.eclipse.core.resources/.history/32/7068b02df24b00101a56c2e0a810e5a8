@@ -1,0 +1,122 @@
+@charset "EUC-KR";
+
+/* 섹션 길이 설정 */
+section {
+	height: auto;
+	overflow: hidden;
+}
+
+#borderWrap {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0 0 25px;
+	align-content: center;
+}
+
+h2 {
+	display: block;
+	width: 1130px;
+	margin: 0 auto;
+}
+
+.border {
+	display: block;
+	background-color: #DEEDF5;
+	padding: 15px;
+	border: 1px solid #195FA5;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 1130px;
+	min-width: 700px;
+}
+
+.border>p {
+	color: #496BAF;
+	font-weight: 600;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+/* 개인정보 수정 시작*/
+.borderForm {
+	background-color: #fff;
+	padding: 5px;
+	font-size: 14px;
+	color: #496BAF;
+	font-weight: 500;
+	width: 97%;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.list th {
+	height: 50px;
+	border-bottom: 1px solid #888;
+}
+
+.list th:nth-child(1) {
+	width: 5%;
+}
+
+.list th:nth-child(2) {
+	width: 70%;
+}
+
+.list th:nth-child(3) {
+}
+
+.list th:nth-child(4) {
+}
+
+.list th:nth-child(5) {
+}
+
+.record td,
+.record a {
+	color: #111;
+	font-weight: 500;
+	text-align: center;
+	line-height: 40px;
+}
+
+.record td:nth-child(2) {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.record {
+	border-bottom: 1px solid #888;
+}
+
+.record:last-child {
+	border: none;
+}
+
+
+
+.submitButton {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 50px;
+	margin-top: 30px;
+	border: none;
+	background-color: #DF307F;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+}
+
+.submitButton:hover {
+	cursor: pointer;
+	background-color: #c51b67;
+	color: #fff;
+}

@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/mypage.css">
+<title>알라딘 : 마이페이지</title>
+</head>
+
+<body>
+
+	<!-- 헤더 임포트 -->
+	<jsp:include page="header.jsp"/>
+    <!-- 섹션 시작 -->
+    <section>
+        <div id="mypageWrap">
+            <!-- 마이페이지 -->
+            <h2>마이페이지</h2>
+            <p style="font-size: 13px;">배송 문의 : 익일택배 CJ대한통운택배(1588-1255) / 당일택배 SLX(1544-6482) / 우체국택배(1588-1300) /
+                편의점택배 (1577-1287)</p><br>
+            <div class="helloSir">
+                <p>&nbsp;${loginUser.username}님, 안녕하세요!</p>
+                <div class="memberRank">
+                    <p>${loginUser.username}님의 멤버십 등급 : 일반등급</p>
+                    <hr>
+                    <p style="color: #444;">알라딘 멤버십 회원이 되시면 구매 금액의 1~3% 추가 마일리지 및 쿠폰 혜택을 받으실 수 있습니다. (단 비국내도서 상품과 함께
+                        주문시에만 본 혜택이 적용됩니다.)</p>
+                </div>
+                <div class="memberRank">
+                    <p>다 읽은 책, 알라딘에 파시겠습니까?</p>
+                    <hr>
+                    <p style="color: #444;">다 읽으신 책들은 알라딘이 빠르게 매입해 드립니다.</p>
+                    <p style="color: #444;">알라딘 오프라인 매장을 찾아주세요.</p>
+                </div>
+            </div>
+            <!-- 개인 정보 수정-->
+            <h2>개인 정보 수정</h2><br>
+            <form action="mypage.do" method="post" name="frm">
+                <div class="modificationInfo">
+                    <div class="infoLeft">
+                        <p>ID</p>
+                        <p>E-Mail</p>
+                        <span>비밀번호</span>
+
+                    </div>
+                    <div class="infoRight">
+                        <p>${loginUser.userid}&nbsp;</p>
+                        <p>${loginUser.email}&nbsp;</p>
+                        <input class="passwordCk" type="password" name="pwd">
+                        <input class="submit" type="submit" value="확인">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- 섹션 끝 -->
+    
+    <!-- 푸터 임포트 -->
+	<jsp:include page="footer.jsp"/>
+</body>
+</html>

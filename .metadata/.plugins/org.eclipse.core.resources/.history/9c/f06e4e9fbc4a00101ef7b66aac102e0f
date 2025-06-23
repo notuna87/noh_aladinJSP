@@ -1,0 +1,12 @@
+ function joinCheck() {
+		if (document.frm.userId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+		if (document.frm.userPw.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.userPw.focus();
+		return false;
+	}
+}

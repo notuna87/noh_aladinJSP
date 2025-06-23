@@ -1,0 +1,55 @@
+package com.aladin.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.aladin.dao.MemberDAO;
+import com.aladin.dto.MemberVO;
+
+@WebServlet("/ModifyingInfo.do")
+public class ModifyingInfoServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Views/modifyingInfo.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// 한글 깨짐 방지 (POST 방식일 때 꼭 필요함)
+		request.setCharacterEncoding("UTF-8");
+
+		// 전달된 데이터 값 저장
+		String joinEmailFront = request.getParameter("joinEmailFront"); // 이메일 앞에 부분을 받아옴
+		String joinEmailBack = request.getParameter("joinEmailBack"); // 이메일 뒤에 부분을 받아옴
+		String email = joinEmailFront + "@" + joinEmailBack; // 받은 후 email에 값 저장
+		String pwd = request.getParameter("pwd");
+		String phoneFirst = request.getParameter("phoneFirst"); // 핸드폰 번호 앞에 부분을 받아옴
+		String phoneMiddle = request.getParameter("phoneMiddle"); // 핸드폰 번호 가운데 부분을 받아옴
+		String phoneBack = request.getParameter("phoneBack"); // 핸드폰 번호 뒤에 부분을 받아옴
+		String phone = phoneFirst + "-" + phoneMiddle + "-" + phoneBack; // 받은 후 phone에 값 저장
+		
+		// 회원 정보를 담을 VO 객체 생성 및 데이터 설정
+		MemberVO mVo = new MemberVO();
+		mVo.setPwd(pwd);
+		mVo.setEmail(email);
+		mVo.setPhone(phone);
+		
+		MemberDAO mDao = MemberDAO.getInstance();
+		mDao.updateMember(mVo);
+
+		// 수정 완료 후 로그인 페이지로 리다이렉트
+		response.sendRedirect("login.do");
+
+		
+	}
+
+}

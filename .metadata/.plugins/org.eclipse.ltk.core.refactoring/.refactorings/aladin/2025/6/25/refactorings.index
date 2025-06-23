@@ -1,0 +1,16 @@
+1749995780989	Delete elements
+1749995860125	Rename resource 'View'
+1749995876143	Rename resource 'main.jsp'
+1750044092498	Rename type 'MemverVO'
+1750051704039	Delete element
+1750122972095	Rename resource 'test.jsp'
+1750150740504	Rename resource 'border.jsp'
+1750207358070	Rename resource 'border.css'
+1750207465649	Rename resource 'boarder.css'
+1750207477482	Rename resource 'boarder.jsp'
+1750207489018	Rename type 'BorderServlet'
+1750213949934	Rename type 'BorderListServlet'
+1750219629888	Delete element
+1750227306395	Encapsulate field 'userid'
+1750382474874	Delete element
+1750403444878	Rename type 'BoardDeleteServlet'

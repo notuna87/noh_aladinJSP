@@ -1,0 +1,75 @@
+package com.aladin.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.aladin.dao.MemberDAO;
+import com.aladin.dto.MemberVO;
+
+@WebServlet("/mypage.do")
+public class MypageServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Views/mypage.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// 한글 출력
+		response.setContentType("text/html; charset=UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		// print 사용
+		PrintWriter out = response.getWriter();
+		// 비밀번호 확인 실패 시 다시 보여줄 페이지 기본값 저장
+		String url = "Views/mypage.jsp";
+		// 사용자로부터 비밀번호 받아오기
+		String pwd = request.getParameter("pwd");
+		
+		//세션에서 userid 가져오기
+		HttpSession session = request.getSession();
+		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");
+		String userid = loginUser.getUserid();
+		
+		// 받아온 비밀번호 디버깅용 출력
+		System.out.println("pwd : " + pwd);
+		System.out.println("userid : " + userid);
+		
+		// MemberDAO 객체를 통해 DB 접근
+		MemberDAO mDao = MemberDAO.getInstance();
+		
+		int result = mDao.userCheck(userid, pwd);
+		
+		if (result == 1) { // 로그인 성공
+			// 로그인 성공 메시지 전달 (필요 시 화면에 출력)
+			request.setAttribute("message", "비밀번호가 확인되었습니다.");
+			url = "Views/modifyingInfo.jsp";
+			
+		} else if (result == 0) { // 비밀번호 틀림
+			request.setAttribute("message", "비밀번호가 맞지 않습니다.");
+
+			// script로 alert 경고 출력
+			out.println("<script>");
+			out.println("alert('비밀번호가 올바르지 않습니다.');");
+			out.println("history.back();");
+			out.println("</script>");
+			out.close();
+
+		}
+		
+		// 최종적으로 해당 URL로 포워딩 (로그인 성공 시 메인, 실패 시 로그인 페이지)
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		dispatcher.forward(request, response);
+	}
+
+}

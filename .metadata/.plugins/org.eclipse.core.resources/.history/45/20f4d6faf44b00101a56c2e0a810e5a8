@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/boardWrite.css">
+<meta charset="UTF-8">
+<title>알라딘 : 문의하기</title>
+</head>
+
+<body>
+	<!-- 헤더 임포트 -->
+	<jsp:include page="header.jsp" />
+
+	<form action="#" method="post">
+		<div id="boarderWrap">
+			<!-- 마이페이지 -->
+			<h2>문의하기</h2>
+			<div class="border">
+				<div class="borderForm">
+					<input class="writeTitle" type="text" name="writeTitle" placeholder="제목을 입력해주세요." required>
+					<span>비밀번호 : </span><input class="pwdCheck" type="password" name="pwdCheck"><span> 본인확인용 비밀번호를 입력해주세요.</span>
+					<textarea  rows="10" cols="60" placeholder="문의내용을 작성해주세요." required></textarea>
+				</div>
+			</div>
+		</div>
+		<input class="submitButton" type="submit" value="문의하기">
+	</form>
+
+	<!-- 푸터 임포트 -->
+	<jsp:include page="footer.jsp" />
+</body>
+</html>

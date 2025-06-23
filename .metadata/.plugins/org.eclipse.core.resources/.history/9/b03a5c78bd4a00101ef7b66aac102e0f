@@ -1,0 +1,38 @@
+function joinCheck() {
+	if (document.frm.name.value == "") {
+		alert('이름을 입력하여 주십시오.');
+		document.frm.name.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.joinId.focus();
+		return false;
+	}
+
+	if (document.frm.joinEmailFront.value == "") {
+		alert('이메일을 입력하여 주십시오.');
+		document.frm.joinEmailFront.focus();
+		return false;
+	}
+	if (document.frm.joinEmailBack.value == "") {
+		alert('이메일을 입력하여 주십시오.');
+		document.frm.joinEmailBack.focus();
+		return false;
+	}
+	if (document.frm.pwd.value == "") {
+		alert('비밀번호를 입력하여 주십시오.');
+		document.frm.pwd.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+	if (document.frm.joinId.value == "") {
+		alert('아이디를 입력하여 주십시오.');
+		document.frm.userId.focus();
+		return false;
+	}
+}

@@ -1,0 +1,129 @@
+@charset "EUC-KR";
+
+/* 섹션 높이 설정*/
+section {
+    height: 560px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* 마이 페이지 전체 wrap*/
+#mypageWrap {
+    width: 1130px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#mypageWrap h2 {
+    font-weight: 500;
+}
+
+/* ~님 안녕하세요 div 시작*/
+.helloSir {
+    width: 98%;
+    height: 160px;
+    background-color: #DEEDF5;
+    padding: 15px 5px;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #195FA5;
+    border-radius: 5px;
+}
+
+.helloSir>p {
+    color: #496BAF;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+/* 멤버십 등급 div 시작*/
+.memberRank {
+    background-color: #fff;
+    height: 90px;
+    padding: 5px;
+    font-size: 14px;
+    color: #496BAF;
+    font-weight: 500;
+    width: 48%;
+    float: left;
+    margin-left: 15px;
+}
+
+.memberRank hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #DEEDF5;
+}
+/* 멤버십 등급 div 끝*/
+
+/* 개인 정보 수정 시작*/
+.modificationInfo {
+    width: 98%;
+    height: 155px;
+    background-color: #DEEDF5;
+    padding: 15px;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #195FA5;
+    border-radius: 5px;
+}
+
+.modificationInfo>.infoLeft {
+    background-color: #fff;
+    width: 10%;
+    padding: 5px;
+    height: 98%;
+    float: left;
+           border-radius: 5px;
+}
+
+.modificationInfo>.infoLeft>p,
+span {
+    color: #496BAF;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 35px;
+
+
+}
+
+.infoRight {
+    background-color: #fff;
+    width: 90%;
+    padding: 5px;
+    height: 98%;
+    float: left;
+    border-radius: 5px;
+}
+
+.modificationInfo>.infoRight>p,
+span {
+    color: #496BAF;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.passwordCk {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #3B82C4;
+}
+
+/* 비밀 번호 확인 창*/
+.submit {
+    width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    border: none;
+    background-color: #3B82C4;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #195FA5;
+}
+
+/* 개인 정보 수정 끝*/

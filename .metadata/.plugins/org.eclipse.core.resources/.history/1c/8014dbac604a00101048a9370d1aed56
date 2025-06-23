@@ -1,0 +1,10 @@
+package com.aladin.dto;
+
+public class MemverVO {
+	private String username;
+	private String userid;
+	private String pwd;
+	private String email;
+	private String phone;
+	private int admin;
+}

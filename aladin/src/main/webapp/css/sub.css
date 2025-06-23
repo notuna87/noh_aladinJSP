@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/*섹션 시작*/
+section {
+    width: 100%;
+    height: 9000px;
+    border: 1px solid #e6e6e6;
+}
+
+/*제목 시작*/
+#titleWrap {
+    width: 1130px;
+    height: 150px;
+    padding: 5px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#titleWrap>a>.deduction {
+    width: 55px;
+    height: 23px;
+    font-size: 12px;
+    position: relative;
+    color: #555555;
+    margin: 15px 0 7px 0;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0 3px;
+    text-align: center;
+    align-content: center;
+}
+
+#titleWrap>h2>span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#titleWrap>img {
+    width: 13px;
+    height: 13px;
+}
+
+#titleWrap>p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+#titleWrap>p>a {
+    color: #444;
+}
+
+#titleWrap>p>a:hover {
+    text-decoration: underline;
+}
+
+/*제목 끝*/
+
+/*책 가격 시작*/
+#bookPriceWrap {
+    width: 1130px;
+    height: 680px;
+    margin: 0 auto;
+}
+
+#bookPriceWrap>img {
+    margin: 30px 15px 0 0;
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+#bookPriceWrap>.bookPrice>.paperEbookButtonLeft {
+    margin-top: 30px;
+    width: 150px;
+    height: 55px;
+    box-shadow: 5px 1px 10px #aaa;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+#bookPriceWrap>.bookPrice>.paperEbookButtonRight {
+    margin-top: 30px;
+    width: 170px;
+    height: 55px;
+    background-color: #f2f2f2;
+    color: #333;
+    float: left;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    transform: translateX(-40px);
+}
+
+#bookPriceWrap>.bookPrice>.paperEbookButtonRight a {
+    color: #111;
+}
+
+#bookPriceWrap>.bookPrice>table {
+    width: 500px;
+    height: 150px;
+}
+
+#bookPriceWrap>.bookPrice td:first-child {
+    width: 120px;
+    align-content: start;
+}
+
+#bookPriceWrap td a {
+    font-size: 13px;
+    color: #fe6600;
+    background-color: #ffeecc;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#bookPriceWrap .salesPoint {
+    margin-top: 30px;
+}
+
+.cardSales {
+    margin-bottom: 60px;
+}
+
+.cardSales>a {
+    display: flex;
+    float: left;
+    margin-right: 50px;
+    align-items: center;
+    color: #000;
+    height: 30px;
+}
+
+.cardSales>a>img {
+    margin: 15px 5px;
+}
+
+.cardSales>a:hover {
+    text-decoration: underline;
+}
+
+.purchaseButtonWrap {
+    display: flex;
+}
+
+.purchaseButtonWrap div {
+    margin-right: 8px;
+    align-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.purchaseButtonWrap div:hover {
+    cursor: pointer;
+}
+
+.cartButton,
+.buyButton {
+    width: 152px;
+    height: 57px;
+    color: #fff;
+}
+
+.cartButton {
+    background-color: #DF307F;
+}
+
+.buyButton {
+    background-color: #E24457;
+}
+
+.presentButton,
+.storageButton {
+    width: 118px;
+    height: 57px;
+    border: 1px solid #DF307F;
+    color: #DF307F;
+}
+
+/*책 가격 끝*/
+
+/*광고 시작*/
+#adWrap {
+    width: 1130px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#adWrap img {
+    height: 120px;
+    width: 550px;
+    padding-right: 7px;
+    margin: 0 auto;
+}
+
+#adWrap img:hover {
+    cursor: pointer;
+}
+
+
+/*광고 끝*/
+
+/*기본정보 시작*/
+
+h2 {
+    float: left;
+    font-weight: 350;
+    font-size: 22px;
+}
+
+#basicInfoWrap {
+    width: 1130px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.basicInfoDetail {
+    float: right;
+    width: 900px;
+    height: 100%;
+}
+
+.basicInfoDetail>span {
+    margin-right: 20px;
+    font-size: 15px;
+    color: #111;
+}
+
+.basicInfoDetail>h3 {
+    font-weight: 500;
+    color: #111;
+}
+
+.basicInfoDetail a {
+    margin-right: 5px;
+    color: #000;
+}
+
+.basicInfoDetail .smallBookCategory::after {
+    content: ">";
+}
+
+.basicInfoDetail>h3>span {
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #E1E1E1;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.basicInfoDetail>h3>span:hover {
+    cursor: pointer;
+}
+
+/*기본정보 끝*/
+
+/*편집장의 선택 시작*/
+#editorChoiceWrap {
+    width: 1130px;
+    height: 320px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.editorChoiceDetail {
+    float: right;
+    width: 900px;
+    height: 100%;
+}
+
+.editorChoiceDetail p {
+    color: #111;
+}
+
+/*편집장의 선택 끝*/
+
+/*저자 인터뷰 시작*/
+#authorInterviewWrap {
+    width: 1130px;
+    height: 530px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#authorInterviewWrap div {
+    width: 900px;
+    height: 420px;
+    float: right;
+}
+
+#authorInterviewWrap iframe {
+    float: right;
+    margin: 40px 0 40px 0;
+}
+
+/*저자 인터뷰 끝*/
+
+/*목차 시작*/
+#tableOfContentsWrap {
+    width: 1130px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+/*목차 끝*/
+
+/*책속에서 시작*/
+#intheBookWrap {
+    width: 1130px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+/*책속에서 끝*/
+
+/*출판사 제공 책 소개 시작*/
+#bookIntroduceWrap {
+    width: 1130px;
+    height: 3500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/*출판사 제공 책 소개 끝*/
+
+/*다음 상품도 구입 시작*/
+#adBookWrap {
+    background-color: burlywood;
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/*다음 상품도 구입 끝*/
+
+/*북플 시작*/
+#bookpleWrap {
+    background-color: yellowgreen;
+    width: 1130px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+/*북플 끝*/
+
+/*100자평 시작*/
+#hundredReviewWrap {
+    background-color: aquamarine;
+    width: 1130px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/*100자평 끝*/
+
+/*마이 리뷰 시작*/
+#myReviewWrap {
+    background-color: unset;
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/*마이 리뷰 끝*/
+
+/*마이 페이퍼 시작*/
+#myPaperWrap {
+    background-color: green;
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/*마이 페이퍼 끝*/
+
+/*반품/교환안내 시작*/
+#returnInfoWrap {
+    background-color: yellowgreen;
+    width: 1130px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/*반품/교환안내 끝*/
+/*섹션 끝*/
