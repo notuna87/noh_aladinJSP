@@ -6,8 +6,8 @@
 
 ## 📌 목차
 
-- [개요](https://github.com/notuna87/noh_aladinJSP#-개요)
-- [기술 스택](https://github.com/notuna87/noh_aladinJSP#-기술-스택)
+- [개요](https://github.com/notuna87/noh_aladinJSP#-📖-개요)
+- [기술 스택](https://github.com/notuna87/noh_aladinJSP#-🛠️-기술-스택)
 - [프로젝트 설계](https://github.com/notuna87/noh_aladinJSP#-프로젝트-설계)
 - [실행 화면](https://github.com/notuna87/noh_aladinJSP#-실행-화면)
 - [PPT](https://github.com/notuna87/noh_aladinJSP#-PPT)
